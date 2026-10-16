@@ -1,0 +1,29 @@
+{
+  "model_root": "${PROJECT_ROOT}/models",
+  "base_model_paths": {
+    "Llama-3-8B": "${PROJECT_ROOT}/models/Llama-3-8B",
+    "Qwen2.5-7B": "${PROJECT_ROOT}/models/Qwen2.5-7B",
+    "Mistral-7B": "${PROJECT_ROOT}/models/Mistral-7B"
+  },
+  "data_root": "${PROJECT_ROOT}/data/Long_Sequence",
+  "dataset_paths": {
+    "mnli": "${PROJECT_ROOT}/data/Long_Sequence/mnli",
+    "agnews": "${PROJECT_ROOT}/data/Long_Sequence/agnews",
+    "multirc": "${PROJECT_ROOT}/data/Long_Sequence/multirc",
+    "imdb": "${PROJECT_ROOT}/data/Long_Sequence/imdb"
+  },
+  "target_adapter_root": "${PROJECT_ROOT}/adapters/TargetModelAdapters",
+  "cross_target_adapter_root": "${PROJECT_ROOT}/adapters/TargetModelAdapters",
+  "dormant_adapter_output_root": "${PROJECT_ROOT}/adapters/DormantModelAdapters",
+  "attack_data_root": "${PROJECT_ROOT}/attack_data",
+  "log_root": "${PROJECT_ROOT}/logs/train_dormant_lora_pairs",
+  "target_adapter_paths": {
+    "Qwen2.5-7B": {
+      "agnews": "${PROJECT_ROOT}/adapters/TargetModelAdapters/Qwen2.5-7B/lora_agnews",
+      "multirc": "${PROJECT_ROOT}/adapters/TargetModelAdapters/Qwen2.5-7B/lora_multirc",
+      "imdb": "${PROJECT_ROOT}/adapters/TargetModelAdapters/Qwen2.5-7B/lora_imdb"
+    },
+    "Mistral-7B:agnews": "${PROJECT_ROOT}/adapters/TargetModelAdapters/Mistral-7B/lora_agnews",
+    "Llama-3-8B/agnews": "${PROJECT_ROOT}/adapters/TargetModelAdapters/Llama-3-8B/lora_agnews"
+  }
+}
