@@ -6,7 +6,7 @@ defense-oriented work, and the paper studies the corresponding defense method.
 ## Installation
 
 ```bash
-cd DormantLoRA
+cd DLoRA
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -37,9 +37,7 @@ cp configs/paths.example.json configs/paths.local.json
 
 ## Data
 
-The benchmark datasets are not committed to this repository. Download the
-CL_Benchmark Long-Sequence tasks and place them under `data/Long_Sequence/` as
-described in [data/README.md](data/README.md).
+The benchmark datasets are not committed to this repository.
 
 ## Quick start
 
